@@ -1,16 +1,61 @@
 {
-  "rawBase": "https://raw.githubusercontent.com/owner/repo/main",
+  "rawBase": "https://raw.githubusercontent.com/platform-minis/CadProjects/main",
   "projects": [
     {
-      "id": "my-project",
-      "name": "My CAD Project",
-      "description": "Example project",
-      "tags": ["mechanical"],
+      "id": "kolejka-tor-prosty",
+      "name": "Tor Prosty 222mm",
+      "description": "Prosty tor kolejki",
+      "tags": ["kolejka"],
       "version": "1.0",
       "cadFile": "",
       "sceneFile": "src/kolejka/TorProstyDl222.json",
       "readme": "src/kolejka/TorProstyDl222.md",
       "thumbnail": "src/kolejka/TorProstyDl222.png"
+    },
+    {
+      "id": "test-templates",
+      "name": "Test Templates",
+      "description": "Starter templates for all editor modes",
+      "tags": ["templates"],
+      "version": "1.0",
+      "templates": {
+        "cad": [
+          {
+            "id": "test-cad-plate",
+            "name": "Mounting Plate",
+            "description": "Rectangular plate with center hole and 4 mounting holes. Outline, centerlines and dashed inner border on separate layers.",
+            "cadFile": "src/TestTemplate/test-cad.cad.json",
+            "thumbnail": ""
+          }
+        ],
+        "cad3d": [
+          {
+            "id": "test-cad3d-block",
+            "name": "Block with Pocket",
+            "description": "Rectangular solid body (60×40×25mm) with a circular pocket (ø24mm, depth 15mm). Sketch + Extrude + Pocket feature tree.",
+            "cadFile": "src/TestTemplate/test-cad3d.cad3d.json",
+            "thumbnail": ""
+          }
+        ],
+        "scene3d": [
+          {
+            "id": "test-scene3d-basic",
+            "name": "Basic Scene",
+            "description": "Starter scene: floor, ambient + directional lights, box, sphere and cylinder primitives.",
+            "sceneFile": "src/TestTemplate/test-scene3d.scene.json",
+            "thumbnail": ""
+          }
+        ],
+        "electronics": [
+          {
+            "id": "test-electronics-pcb",
+            "name": "PCB Starter",
+            "description": "50.8×38.1mm PCB outline with mounting holes, copper pads, IC footprint and trace. Layers: PCB Outline / Copper / Silkscreen.",
+            "cadFile": "src/TestTemplate/test-electronics.cad.json",
+            "thumbnail": ""
+          }
+        ]
+      }
     }
   ]
 }

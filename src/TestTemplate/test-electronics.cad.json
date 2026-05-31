@@ -1,0 +1,180 @@
+{
+  "version": "1.0",
+  "settings": {
+    "name": "Test Electronics Template",
+    "units": "mm",
+    "gridSize": 2.54,
+    "precision": 2
+  },
+  "layers": {
+    "layers": [
+      { "id": "0", "name": "0", "color": "#ffffff", "lineType": "solid", "lineWidth": 1, "visible": true, "locked": false },
+      { "id": "pcb", "name": "PCB Outline", "color": "#4caf50", "lineType": "solid", "lineWidth": 2, "visible": true, "locked": false },
+      { "id": "copper", "name": "Copper", "color": "#ffc107", "lineType": "solid", "lineWidth": 1, "visible": true, "locked": false },
+      { "id": "silk", "name": "Silkscreen", "color": "#ffffff", "lineType": "solid", "lineWidth": 0.5, "visible": true, "locked": false }
+    ],
+    "activeId": "0"
+  },
+  "entities": [
+    {
+      "id": "pcb-outline",
+      "type": "rect",
+      "layerId": "pcb",
+      "color": "bylayer",
+      "lineType": "solid",
+      "lineWidth": 2,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "x": 0,
+      "y": 0,
+      "width": 50.8,
+      "height": 38.1
+    },
+    {
+      "id": "pad-d2",
+      "type": "circle",
+      "layerId": "copper",
+      "color": "bylayer",
+      "lineType": "solid",
+      "lineWidth": 1,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "cx": 5.08,
+      "cy": 5.08,
+      "radius": 1.5
+    },
+    {
+      "id": "pad-d3",
+      "type": "circle",
+      "layerId": "copper",
+      "color": "bylayer",
+      "lineType": "solid",
+      "lineWidth": 1,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "cx": 5.08,
+      "cy": 10.16,
+      "radius": 1.5
+    },
+    {
+      "id": "pad-d4",
+      "type": "circle",
+      "layerId": "copper",
+      "color": "bylayer",
+      "lineType": "solid",
+      "lineWidth": 1,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "cx": 5.08,
+      "cy": 15.24,
+      "radius": 1.5
+    },
+    {
+      "id": "ic-body",
+      "type": "rect",
+      "layerId": "silk",
+      "color": "bylayer",
+      "lineType": "solid",
+      "lineWidth": 0.5,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "x": 15,
+      "y": 12,
+      "width": 20,
+      "height": 14
+    },
+    {
+      "id": "ic-pin1",
+      "type": "circle",
+      "layerId": "silk",
+      "color": "bylayer",
+      "lineType": "solid",
+      "lineWidth": 0.5,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "cx": 16.5,
+      "cy": 13.5,
+      "radius": 0.8
+    },
+    {
+      "id": "trace-1",
+      "type": "polyline",
+      "layerId": "copper",
+      "color": "bylayer",
+      "lineType": "solid",
+      "lineWidth": 1,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "points": [
+        { "x": 5.08, "y": 5.08 },
+        { "x": 10, "y": 5.08 },
+        { "x": 10, "y": 12 },
+        { "x": 15, "y": 12 }
+      ],
+      "closed": false
+    },
+    {
+      "id": "hole-mount-1",
+      "type": "circle",
+      "layerId": "0",
+      "color": "#ffffff",
+      "lineType": "solid",
+      "lineWidth": 1,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "cx": 2.5,
+      "cy": 2.5,
+      "radius": 1.6
+    },
+    {
+      "id": "hole-mount-2",
+      "type": "circle",
+      "layerId": "0",
+      "color": "#ffffff",
+      "lineType": "solid",
+      "lineWidth": 1,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "cx": 48.3,
+      "cy": 2.5,
+      "radius": 1.6
+    },
+    {
+      "id": "hole-mount-3",
+      "type": "circle",
+      "layerId": "0",
+      "color": "#ffffff",
+      "lineType": "solid",
+      "lineWidth": 1,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "cx": 48.3,
+      "cy": 35.6,
+      "radius": 1.6
+    },
+    {
+      "id": "hole-mount-4",
+      "type": "circle",
+      "layerId": "0",
+      "color": "#ffffff",
+      "lineType": "solid",
+      "lineWidth": 1,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "cx": 2.5,
+      "cy": 35.6,
+      "radius": 1.6
+    }
+  ]
+}

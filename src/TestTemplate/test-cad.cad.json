@@ -1,0 +1,149 @@
+{
+  "version": "1.0",
+  "settings": {
+    "name": "Test CAD Template",
+    "units": "mm",
+    "gridSize": 10,
+    "precision": 2
+  },
+  "layers": {
+    "layers": [
+      { "id": "0", "name": "0", "color": "#ffffff", "lineType": "solid", "lineWidth": 1, "visible": true, "locked": false },
+      { "id": "outline", "name": "Outline", "color": "#4fc3f7", "lineType": "solid", "lineWidth": 2, "visible": true, "locked": false },
+      { "id": "center", "name": "Center", "color": "#ff9800", "lineType": "dashdot", "lineWidth": 1, "visible": true, "locked": false }
+    ],
+    "activeId": "0"
+  },
+  "entities": [
+    {
+      "id": "rect-outer",
+      "type": "rect",
+      "layerId": "outline",
+      "color": "bylayer",
+      "lineType": "solid",
+      "lineWidth": 2,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "x": -60,
+      "y": -40,
+      "width": 120,
+      "height": 80
+    },
+    {
+      "id": "rect-inner",
+      "type": "rect",
+      "layerId": "0",
+      "color": "bylayer",
+      "lineType": "dashed",
+      "lineWidth": 1,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "x": -40,
+      "y": -20,
+      "width": 80,
+      "height": 40
+    },
+    {
+      "id": "circle-center",
+      "type": "circle",
+      "layerId": "outline",
+      "color": "bylayer",
+      "lineType": "solid",
+      "lineWidth": 2,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "cx": 0,
+      "cy": 0,
+      "radius": 15
+    },
+    {
+      "id": "line-h",
+      "type": "line",
+      "layerId": "center",
+      "color": "bylayer",
+      "lineType": "dashdot",
+      "lineWidth": 1,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "x1": -70,
+      "y1": 0,
+      "x2": 70,
+      "y2": 0
+    },
+    {
+      "id": "line-v",
+      "type": "line",
+      "layerId": "center",
+      "color": "bylayer",
+      "lineType": "dashdot",
+      "lineWidth": 1,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "x1": 0,
+      "y1": -50,
+      "x2": 0,
+      "y2": 50
+    },
+    {
+      "id": "hole-tl",
+      "type": "circle",
+      "layerId": "0",
+      "color": "bylayer",
+      "lineType": "solid",
+      "lineWidth": 1,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "cx": -45,
+      "cy": 25,
+      "radius": 4
+    },
+    {
+      "id": "hole-tr",
+      "type": "circle",
+      "layerId": "0",
+      "color": "bylayer",
+      "lineType": "solid",
+      "lineWidth": 1,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "cx": 45,
+      "cy": 25,
+      "radius": 4
+    },
+    {
+      "id": "hole-bl",
+      "type": "circle",
+      "layerId": "0",
+      "color": "bylayer",
+      "lineType": "solid",
+      "lineWidth": 1,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "cx": -45,
+      "cy": -25,
+      "radius": 4
+    },
+    {
+      "id": "hole-br",
+      "type": "circle",
+      "layerId": "0",
+      "color": "bylayer",
+      "lineType": "solid",
+      "lineWidth": 1,
+      "visible": true,
+      "locked": false,
+      "extrudeHeight": 0,
+      "cx": 45,
+      "cy": -25,
+      "radius": 4
+    }
+  ]
+}

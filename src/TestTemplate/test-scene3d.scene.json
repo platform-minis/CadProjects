@@ -1,0 +1,175 @@
+{
+  "version": "1.0.0",
+  "root": {
+    "id": "root-scene",
+    "name": "Scene",
+    "type": "group",
+    "visible": true,
+    "position": [0, 0, 0],
+    "rotation": [0, 0, 0],
+    "scale": [1, 1, 1],
+    "castShadow": false,
+    "receiveShadow": false,
+    "frustumCulled": true,
+    "renderOrder": 0,
+    "userData": "",
+    "metadata": {},
+    "children": [
+      {
+        "id": "light-ambient",
+        "name": "Ambient Light",
+        "type": "light",
+        "lightType": "ambient",
+        "color": "#ffffff",
+        "intensity": 0.4,
+        "groundColor": "#444444",
+        "distance": 0,
+        "decay": 2,
+        "angle": 0.785,
+        "penumbra": 0.1,
+        "shadowIntensity": 1,
+        "shadowBias": -0.0001,
+        "shadowNormalBias": 0,
+        "shadowRadius": 1,
+        "visible": true,
+        "position": [0, 0, 0],
+        "rotation": [0, 0, 0],
+        "scale": [1, 1, 1],
+        "castShadow": false,
+        "receiveShadow": false,
+        "frustumCulled": true,
+        "renderOrder": 0,
+        "userData": "",
+        "metadata": {},
+        "children": []
+      },
+      {
+        "id": "light-dir",
+        "name": "Directional Light",
+        "type": "light",
+        "lightType": "directional",
+        "color": "#ffffff",
+        "intensity": 1.2,
+        "groundColor": "#444444",
+        "distance": 0,
+        "decay": 2,
+        "angle": 0.785,
+        "penumbra": 0.1,
+        "shadowIntensity": 1,
+        "shadowBias": -0.0001,
+        "shadowNormalBias": 0,
+        "shadowRadius": 1,
+        "visible": true,
+        "position": [5, 8, 5],
+        "rotation": [0, 0, 0],
+        "scale": [1, 1, 1],
+        "castShadow": true,
+        "receiveShadow": false,
+        "frustumCulled": true,
+        "renderOrder": 0,
+        "userData": "",
+        "metadata": {},
+        "children": []
+      },
+      {
+        "id": "mesh-floor",
+        "name": "Floor",
+        "type": "mesh",
+        "visible": true,
+        "position": [0, -0.05, 0],
+        "rotation": [0, 0, 0],
+        "scale": [1, 1, 1],
+        "castShadow": false,
+        "receiveShadow": true,
+        "frustumCulled": true,
+        "renderOrder": 0,
+        "userData": "",
+        "metadata": {},
+        "children": [],
+        "geometry": {
+          "type": "box",
+          "params": { "width": 10, "height": 0.1, "depth": 10 }
+        },
+        "material": {
+          "color": "#555555",
+          "opacity": 1,
+          "wireframe": false
+        }
+      },
+      {
+        "id": "mesh-box",
+        "name": "Box",
+        "type": "mesh",
+        "visible": true,
+        "position": [-1.5, 0.5, 0],
+        "rotation": [0, 0.5, 0],
+        "scale": [1, 1, 1],
+        "castShadow": true,
+        "receiveShadow": true,
+        "frustumCulled": true,
+        "renderOrder": 0,
+        "userData": "",
+        "metadata": {},
+        "children": [],
+        "geometry": {
+          "type": "box",
+          "params": { "width": 1, "height": 1, "depth": 1 }
+        },
+        "material": {
+          "color": "#4fc3f7",
+          "opacity": 1,
+          "wireframe": false
+        }
+      },
+      {
+        "id": "mesh-sphere",
+        "name": "Sphere",
+        "type": "mesh",
+        "visible": true,
+        "position": [1.5, 0.6, 0],
+        "rotation": [0, 0, 0],
+        "scale": [1, 1, 1],
+        "castShadow": true,
+        "receiveShadow": true,
+        "frustumCulled": true,
+        "renderOrder": 0,
+        "userData": "",
+        "metadata": {},
+        "children": [],
+        "geometry": {
+          "type": "sphere"
+        },
+        "material": {
+          "color": "#ef9a9a",
+          "opacity": 1,
+          "wireframe": false
+        }
+      },
+      {
+        "id": "mesh-cylinder",
+        "name": "Cylinder",
+        "type": "mesh",
+        "visible": true,
+        "position": [0, 0.75, -2],
+        "rotation": [0, 0, 0],
+        "scale": [1, 1, 1],
+        "castShadow": true,
+        "receiveShadow": true,
+        "frustumCulled": true,
+        "renderOrder": 0,
+        "userData": "",
+        "metadata": {},
+        "children": [],
+        "geometry": {
+          "type": "cylinder",
+          "params": { "radiusTop": 0.5, "radiusBottom": 0.5, "height": 1.5, "radialSegments": 32 }
+        },
+        "material": {
+          "color": "#a5d6a7",
+          "opacity": 1,
+          "wireframe": false
+        }
+      }
+    ]
+  }
+}
