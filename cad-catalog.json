@@ -1,0 +1,16 @@
+{
+  "rawBase": "https://raw.githubusercontent.com/owner/repo/main",
+  "projects": [
+    {
+      "id": "my-project",
+      "name": "My CAD Project",
+      "description": "Example project",
+      "tags": ["mechanical"],
+      "version": "1.0",
+      "cadFile": "",
+      "sceneFile": "src/kolejka/TorProstyDl222.json",
+      "readme": "src/kolejka/TorProstyDl222.md",
+      "thumbnail": "src/kolejka/TorProstyDl222.png"
+    }
+  ]
+}
