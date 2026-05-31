@@ -44,6 +44,13 @@
             "description": "Starter scene: floor, ambient + directional lights, box, sphere and cylinder primitives.",
             "sceneFile": "src/TestTemplate/test-scene3d.scene.json",
             "thumbnail": ""
+          },
+          {
+            "id": "test-kolejka",
+            "name": "Test Kolejka",
+            "description": "Test kolejka",
+            "sceneFile": "src/kolejka/TorProstyDl222.json",
+            "thumbnail": "src/kolejka/TorProstyDl222.png"
           }
         ],
         "electronics": [
